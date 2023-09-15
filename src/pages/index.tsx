@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Script from 'next/script'
+import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import { Typewriter } from 'react-simple-typewriter'
 import React, { useState, useEffect } from 'react';
@@ -204,10 +204,6 @@ export  default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
       </Head>
-      <Script>
-        <script type="module" src="https://app.bueno.art/widget/v3/index.js">			</script>
-        {/* <link rel="stylesheet" href="https://app.bueno.art/widget/v3/styles.css" /> */}
-      </Script>
       <div data-bueno-mint="9YGCgZVDVQE6SzcGO9VSE"></div>
       <main className={styles.main} style={{backgroundColor:''}}>
         <div className='centerContentViewport' style={{backgroundColor:''} }>
@@ -435,7 +431,7 @@ export  default function Home() {
         </div> */}
         <div className='centerContentViewport'>
           <h1>
-            Let's connect!
+            Let&apos;s connect!
           </h1>
           <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" /> fds_web
           <p>

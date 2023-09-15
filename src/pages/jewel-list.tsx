@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import Script from 'next/script'
 import styles from '@/styles/Home.module.css'
 import { Typewriter } from 'react-simple-typewriter'
 import React, { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons'
 import { Parallax } from 'react-scroll-parallax';
+import Link from 'next/link'
+
 
 
 export function OroseVisual() {
@@ -93,9 +94,6 @@ export  default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
       </Head>
-      <Script>
-        <script type="module" src="https://app.bueno.art/widget/v3/index.js">			</script>
-      </Script>
       <div data-bueno-mint="9YGCgZVDVQE6SzcGO9VSE"></div>
       <main className={styles.main} style={{backgroundColor:''}}>
         <div className="cta">PRICES TODAY</div>
@@ -108,9 +106,9 @@ export  default function Home() {
           </div>
         </div>
         <div className="cta">YOUR JEWELS</div>
-        <a href='/jewel-dashboard'>
+        <Link href='/jewel-dashboard'>
           <img style={{maxWidth: '70%', lineHeight:'.8'}} className="jewelImage" src="/orose_000-3D_7.png" />
-        </a>
+        </Link>
         <p style={{fontSize: '2em', lineHeight:'.8'}}>fds bracelet</p>
         <img style={{maxWidth: '70%', lineHeight:'.8'}} className="jewelImage" src="/orose_000-3D_7.png" />
         <p style={{fontSize: '2em', lineHeight:'.8'}}>+ Claim another one</p>
