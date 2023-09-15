@@ -6,12 +6,12 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 194, 122, 116;
+  --background-end-rgb: 194, 122, 116;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
+    #316d9033 0deg,
     #0885ff33 55deg,
     #54d6ff33 120deg,
     #0071ff33 160deg,
@@ -40,39 +40,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -83,25 +50,151 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  text-align: center;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  color: black;
+  background: rgb(var(--background-start-rgb));
+  font-family: 'Dosis', sans-serif;
+  font-size: 2vw;
+} 
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+h1, h2, h3 , h4, h5, h6 {
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Dosis', sans-serif !important; */
+  /* font-family: 'Rubik Mono One', sans-serif; */
+  /* font-family: 'Bodoni Moda', serif; */
+  /* font-family: 'Black Han Sans', sans-serif; */
+  /* font-family: 'Notable', sans-serif; */
+  /* font-family: 'Ultra', serif; */
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Parisienne', cursive; */
+
+
+  /* font-family: 'Crimson Pro', serif;
+  /* font-family: 'DM Serif Text', serif; */
+  /* font-family: 'Italiana', serif; */
+  /* font-family: 'Ovo', serif;
+  font-family: 'Playfair Display', serif; */
+  /* font-family: 'Rozha One', serif; */
+  /* font-family: 'Stoke', serif; */
+  font-weight: normal;
+}
+
+h1{
+  font-size: clamp(70px, 16vw, 300px);
+}
+
+h2{
+  font-size: clamp(32px, 16vw, 200px);
+}
+
+p {
+  font-size: clamp(16px, 8vw, 32px);
+}
+
+button {
+  font-family: 'Italiana', serif;
+  background: black;
+  border-width: 3px;
+  border-style: outset;
+  color: #ccb400;
+  font-size: 20px;
+  position: relative;
+  overflow: visible;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 40vw;
+  max-width: 200px;
+  height: 10vh;
+  height: 50px; 
+} 
+
+.centerContentViewport{
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  /* margin: 10vh auto 0; */
+  /* margin-top: 10vh;
+  margin-bottom: 40vh; */
+  /* transform: translateY(-50%); */
+}
+
+.text-overlay{
+  /* position: absolute; */
+  margin: 40% auto 0;
+  position: relative;
+  font-size: clamp(68px, 10vw, 300px);
+  font-weight: 900;
+  text-shadow: 10px 10px 20px rgb(67, 8, 8);
+  z-index: 10;
+  text-align: center;
+  top: 0px; 
+  /* text-shadow: 10px 8px 16px rgb(var(--background-start-rgb)) */
+  /* background-color: rgb(var(--background-start-rgb)); */
+  /* color: rgb(var(--background-start-rgb)); */
+}
+
+.tile{
+  width: 200vw;
+  max-width: 3000px;
+  position: relative;
+  z-index: 0;
+}
+
+.chain-lisa{
+  height: 80px;
+}
+
+.grid-item {
+  /* background-color: #D7F75B; */
+  /* padding: 20px; */
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+/* Dashboard Grid css */
+
+.grid-container {
+  display: grid;
+  width: 90vw;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 100%;
+  padding-bottom: 5vh;
+}
+
+.grid-container > div {
+  text-align: center;
+}
+
+.jewelImage {
+  width: 40vw;
+  max-width: 200px;
+}
+.pulse {
+  animation: myPulse 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+    color: #ccb400;
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
