@@ -33,7 +33,7 @@ export function ReadMore() {
   return (
     <>
       <br />
-      <p>let's go</p>
+      <p>let&apos;s go</p>
       <p>👇</p>
     </>
   )
