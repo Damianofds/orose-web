@@ -43,7 +43,7 @@ const TopMenu = () => {
   return (
     <nav >
       <ul style={topMenuStyles.menuList}>
-        <li style={topMenuStyles.menuItem}><a href='/jewel-list'>My tokens</a></li>
+        {/* <li style={topMenuStyles.menuItem}><a href='/jewel-list'>My tokens</a></li> */}
       </ul>
     </nav>
   );
