@@ -10,17 +10,31 @@ import { relative } from 'path';
 
 export function OroseLogo() {
   return (
-    <img src="/orose-logo.png" style={{ width: '60vw', maxWidth: '400px' }} loading="lazy" />
+    <>
+      <br />
+      <img src="/orose-logo.png" style={{ width: '60vw', maxWidth: '400px' }} loading="lazy" />
+    </>
   )
 }
 
 export function OroseVisual() {
   return (
     <>
+      <br />
       <img src="/orose-visual-22.gif" style={{ width: '80vw', maxWidth: '400px' }} loading="lazy" />
       {/* <img src="/orose-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
       <img src="/orose-liscio-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
       <img src="/orose-liscio-visual-18.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/> */}
+    </>
+  )
+}
+
+export function ReadMore() {
+  return (
+    <>
+      <br />
+      <p>let's go</p>
+      <p>👇</p>
     </>
   )
 }
@@ -59,6 +73,7 @@ const topMenuStyles = {
 export function OroseClaim() {
   return (
     <div style={{margin: 'auto 0',  fontSize: 'clamp(16px, 8vw, 42px)'}}>
+      <br />
       <p>
         <span>
           {/* <Typewriter
@@ -207,10 +222,11 @@ export  default function Home() {
       <div data-bueno-mint="9YGCgZVDVQE6SzcGO9VSE"></div>
       <main className={styles.main} style={{backgroundColor:''}}>
         <div className='centerContentViewport' style={{backgroundColor:''} }>
-          <TopMenu />
+          {/* <TopMenu /> */}
           <OroseLogo />
           <OroseClaim />
           <OroseVisual />
+          <ReadMore />
         </div>
         <div className='centerContentViewport'>  
             <Parallax speed={30} scale={[0.15, 1.5]} style={{ zIndex:'100'}}>

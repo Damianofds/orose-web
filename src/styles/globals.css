@@ -56,7 +56,8 @@ body {
 body {
   color: black;
   background: rgb(var(--background-start-rgb));
-  font-family: 'Dosis', sans-serif;
+  /* font-family: 'Dosis', sans-serif; */
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2vw;
 } 
 
