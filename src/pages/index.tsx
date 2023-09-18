@@ -304,7 +304,7 @@ export  default function Home() {
             </h1>
           </Parallax>
           <Parallax translateX={['-200px', '300px']}>
-              <img style={{width:'100vw'}} src="/pics/photo/smart_looking_girl_minting.png" />
+              <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_minting.png" />
           </Parallax>
         </div>
         <div className='centerContentViewport'style={{backgroundColor:''}}>
@@ -316,8 +316,8 @@ export  default function Home() {
               Trade it at any time
             </h1>
           </Parallax>
-          <Parallax translateX={['-200px', '300px']}>
-            <img style={{width:'100vw'}} src="/pics/photo/smart_looking_girl_trading.png" />
+          <Parallax translateX={['0px', '-300px']}>
+            <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_trading.png" />
           </Parallax>
         </div>
         <div className='centerContentViewport'style={{backgroundColor:''}}>
@@ -329,142 +329,27 @@ export  default function Home() {
               Wear it when you want!
             </h1>
           </Parallax>
-          <Parallax translateX={['00px', '-300px']}>
-            <img style={{width:'100vw'}} src="/pics/photo/smart_looking_girl_wearing.png" />
+          <Parallax translateX={['-200px', '300px']}>
+            <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_wearing.png" />
           </Parallax>
         </div>
         {/* <div className='centerContentViewport' style={{backgroundImage: "repeating-radial-gradient(#c27a74, #ccb400 20%, #c27a74 10%);" }}> */}
         {/* <div className='centerContentViewport' style={{backgroundImage: "linear-gradient(#c27a74, #ccb400 50%, #c27a74);" }}> */}
-        <Parallax translateX={['00px', '-200px']}>
-            <img src="/chain-lisa.png" className='chain-lisa' loading="lazy" />
-          </Parallax>
-        <div className='centerContentViewport' style={{backgroundImage: "radial-gradient(#ccb400, #c27a74 65%);" }}>
+        {/* <Parallax translateX={['00px', '-200px']}>
+          <img src="/chain-lisa.png" className='chain-lisa' loading="lazy" />
+        </Parallax> */}
+        <div className='centerContentViewport' style={{backgroundImage: "radial-gradient(#ccb400, #c27a74 65%)" }}>
           <h1 className='text-overlay'>Mint yours!</h1>
           <OroseMintGame imageUrls={["/orose_000-3D_11.png", "/orose_000-3D_1.png", "/orose_000-3D_2.png", "/orose_000-3D_4.png", "orose_000-3D_7.png"]} />
         </div>
-        {/* <div className='centerContentViewport'>
-          <Parallax speed={60}>
-            <h1>
-              Learn more
-            </h1></Parallax>
-          <Parallax speed={10}>
-            <h1>
-              👇
-            </h1>
-          </Parallax>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Own a unique jewel
-          </h1>
-          <ul>
-            <li>The digital jewell</li>
-            <li>yo2</li>
-          </ul>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Community access
-          </h1>
-          <br />
-          <p>
-            Discuss sizes and customizations with a goldsmith from the team<br />
-            Partecipate to airdrops and claiming fees discounts
-          </p>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Apps & Integrations
-          </h1>
-          <p>Optimize costs for the physical version - Interact with the Orosé smart contract through your token gated Web3 app</p>
-          <p>Wear your jewel on Social Media using our 3D filters and games</p>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Trade it digitally
-          </h1>
-          <br />
-          <>
-            Trade it on NFT Marketplaces
-          </>
-          <p>
-            Put a price on them and evaluate market offers
-          </p>
-          <br />
-          <p>
-            Value your exclusive right of forging the jewel in the physical world
-          </p>
-          <br />
-          <p>
-            Value the membership of our private jewelry lovers community
-          </p>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Trade it physically
-          </h1>
-          <p>
-            Sell it through traditional art marketplaces 
-          </p>
-          <p>
-            The physical version of the jewel comes with a Physical Backed Token which serves to link the physical ownership to the digital and community experience
-          </p>
-          <p>
-            This allows you to sell also all the access rights the digital jewel and the Orosé community
-          </p>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Ethic & Treacability
-          </h1>
-          <br />
-          <p>
-            We value carefully our valuable assets
-          </p>
-          <br />
-          <p>
-            We facilitare the tracking of the source of Metals and Gemstones
-          </p>
-        </div>
-        <div className='centerContentViewport'>
-          <h1>
-            Digital jewelry workbench
-          </h1>
-          <br />
-          <p>
-            Create your own jewel chosing among our tokenized design and gemstones
-          </p>
-          <p>
-            Pick your favourite gemstones from our curated selection
-          </p>
-          <p>
-            Choose a design for it
-          </p>
-          <p>
-            Mint your own digital creation 
-          </p>
-          <p>
-            Wear it whenever you want! 
-          </p>
-          <br />
-          <h2>
-            Unveals in Q4 2023
-          </h2>
-        </div>
-        <div className='centerContentViewport' style={{backgroundImage: "radial-gradient(#ccb400, #c27a74 65%);" }}>
-          <h1>Mint yours now!</h1>
-          <OroseMintGame imageUrls={["/orose_000-3D_11.png", "/orose_000-3D_1.png", "/orose_000-3D_2.png", "/orose_000-3D_4.png", "orose_000-3D_7.png"]} />
-        </div> */}
         <div className='centerContentViewport'>
           <h1>
             Let&apos;s connect!
           </h1>
+          <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" />
           <p>
-            <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" /> fds_web
+            fds_web
           </p>
-        </div>
-        <div className='centerContentViewport'>
-          {/* Keep this empty section here for creating space at the bottom */}
         </div>
       </main>
     </>
