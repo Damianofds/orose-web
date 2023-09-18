@@ -58,7 +58,7 @@ body {
   background: rgb(var(--background-start-rgb));
   /* font-family: 'Dosis', sans-serif; */
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2vw;
+  /* font-size: 2vw; */
 } 
 
 a {
@@ -66,30 +66,9 @@ a {
   /* text-decoration: none; */
 }
 
-h1, h2, h3 , h4, h5, h6 {
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Dosis', sans-serif !important; */
-  /* font-family: 'Rubik Mono One', sans-serif; */
-  /* font-family: 'Bodoni Moda', serif; */
-  /* font-family: 'Black Han Sans', sans-serif; */
-  /* font-family: 'Notable', sans-serif; */
-  /* font-family: 'Ultra', serif; */
-  /* font-family: 'Libre Baskerville', serif; */
-  /* font-family: 'Parisienne', cursive; */
-
-
-  /* font-family: 'Crimson Pro', serif;
-  /* font-family: 'DM Serif Text', serif; */
-  /* font-family: 'Italiana', serif; */
-  /* font-family: 'Ovo', serif;
-  font-family: 'Playfair Display', serif; */
-  /* font-family: 'Rozha One', serif; */
-  /* font-family: 'Stoke', serif; */
-  font-weight: normal;
-}
-
 h1{
   font-size: clamp(70px, 16vw, 300px);
+  font-weight: 100;
 }
 
 h2{
@@ -132,7 +111,7 @@ button {
   margin: 40% auto 0;
   position: relative;
   font-size: clamp(68px, 10vw, 300px);
-  font-weight: 900;
+  font-weight: 100;
   text-shadow: 10px 10px 20px rgb(67, 8, 8);
   z-index: 10;
   text-align: center;

@@ -43,7 +43,7 @@ const TopMenu = () => {
   return (
     <nav >
       <ul style={topMenuStyles.menuList}>
-        <li style={topMenuStyles.menuItem}><a href='http://localhost:3000/jewel-list'>My tokens</a></li>
+        <li style={topMenuStyles.menuItem}><a href='/jewel-list'>My tokens</a></li>
       </ul>
     </nav>
   );
@@ -87,7 +87,7 @@ export function OroseClaim() {
       </p>
       <p>
         wear your {' '}
-        <span style={{ color: 'black', fontWeight: 'bold' }}>
+        <span style={{ color: 'black' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={['NFTs', 'digital jewels', 'tokens', 'ETH']}
@@ -262,7 +262,7 @@ export  default function Home() {
               position:'absolute', left: '20%', bottom: '60vh', margin: '0 auto', zIndex:'100'
             }}
           >
-            <h1 style={{color: 'white'}} className='text-overlay'>Digital hearth</h1>
+            <h1 style={{color: 'white'}} className='text-overlay'>Digital heart</h1>
           </Parallax>
           <Parallax 
             // translateX={['-400px', '0px']}
@@ -299,28 +299,38 @@ export  default function Home() {
                 position:'absolute', left: '20%', margin: '0 auto', zIndex:'100'
               }}
             >
-            <h1 className='text-overlay'>
+            <h1 style={{color: 'white'}} className='text-overlay'>
               Mint it as a digital token
             </h1>
           </Parallax>
-          <Parallax translateX={['-100px', '100px']}>
-              <img src="/pics/photo/smart_looking_girl_minting.png" />
+          <Parallax translateX={['-200px', '300px']}>
+              <img style={{width:'100vw'}} src="/pics/photo/smart_looking_girl_minting.png" />
           </Parallax>
         </div>
         <div className='centerContentViewport'style={{backgroundColor:''}}>
-          <h1 className='text-overlay'>
-            Trade it at any time
-          </h1>
-          <Parallax translateX={['-200px', '200px']}>
-            <img src="/pics/photo/smart_looking_girl_trading.png" />
+          <Parallax speed={30} scale={[0.15, 1.5]} style={{
+                  position:'absolute', left: '20%', margin: '0 auto', zIndex:'100'
+                }}
+              >
+            <h1 style={{color: 'white'}} className='text-overlay'>
+              Trade it at any time
+            </h1>
+          </Parallax>
+          <Parallax translateX={['-200px', '300px']}>
+            <img style={{width:'100vw'}} src="/pics/photo/smart_looking_girl_trading.png" />
           </Parallax>
         </div>
         <div className='centerContentViewport'style={{backgroundColor:''}}>
-          <h1 className='text-overlay'>
-            Wear it when you want!
-          </h1>
-          <Parallax translateX={['00px', '-200px']}>
-            <img src="/pics/photo/smart_looking_girl_wearing.png" />
+          <Parallax speed={30} scale={[0.15, 1.5]} style={{
+                  position:'absolute', left: '20%', margin: '0 auto', zIndex:'100'
+                }}
+              >
+            <h1 style={{color: 'white'}} className='text-overlay'>
+              Wear it when you want!
+            </h1>
+          </Parallax>
+          <Parallax translateX={['00px', '-300px']}>
+            <img style={{width:'100vw'}} src="/pics/photo/smart_looking_girl_wearing.png" />
           </Parallax>
         </div>
         {/* <div className='centerContentViewport' style={{backgroundImage: "repeating-radial-gradient(#c27a74, #ccb400 20%, #c27a74 10%);" }}> */}
@@ -449,8 +459,8 @@ export  default function Home() {
           <h1>
             Let&apos;s connect!
           </h1>
-          <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" /> fds_web
           <p>
+            <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" /> fds_web
           </p>
         </div>
         <div className='centerContentViewport'>

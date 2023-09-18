@@ -16,8 +16,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,900;1,800&family=DM+Serif+Text&family=Italiana&family=Ovo&family=Playfair+Display:ital,wght@1,900&family=Rozha+One&family=Stoke&display=swap" rel="stylesheet" />
-
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet"></link>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
       
       </Head>
