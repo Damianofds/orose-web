@@ -115,7 +115,7 @@ button {
   text-shadow: 10px 10px 20px rgb(67, 8, 8);
   z-index: 10;
   text-align: center;
-  top: 0px; 
+  /* top: 0px;  */
   /* text-shadow: 10px 8px 16px rgb(var(--background-start-rgb)) */
   /* background-color: rgb(var(--background-start-rgb)); */
   /* color: rgb(var(--background-start-rgb)); */
@@ -129,7 +129,18 @@ button {
 }
 
 .chain-lisa{
-  height: 80px;
+  max-height: 5vh;
+  /* background-image: url('/chain-lisa-xs.png'); */
+  /* background-size: cover; */
+  /* background-repeat: repeat-x; */
+  /* padding: 30px; */
+  /* text-align: center; */
+  /* width: 1600px; */
+
+
+
+
+  background-color: transparent;
 }
 
 .grid-item {
