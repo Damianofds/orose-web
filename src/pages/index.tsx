@@ -258,33 +258,39 @@ export  default function Home() {
               <h1 className="text-overlay">phygital jewelry</h1>
             </Parallax>
             <ChainLisa />
-        </div>
-        <Parallax opacity={[0, 1]} scale={[0.15, 1.5]} easing={'easeOutQuad'}>
+            <Parallax opacity={[0, 1]} scale={[0.15, 1.5]} easing={'easeOutQuad'}>
           <div style={{position:'absolute', 
             width:'100vw',
             height:'100vh',
             backgroundColor:'black '}}>
           </div>
         </Parallax>
+        </div>
         <div
           className='centerContentViewport'
           style={{
             backgroundColor:'black ',
             position: 'relative',
-            backgroundImage: 'repeating-radial-gradient(circle at 0 0,#000000,#000000 10px,#0c140e 10px,#0c140e 11px);',
+            backgroundImage: 'repeating-radial-gradient(circle at 0 0,#000000,#000000 10px,#0c140e 10px,#0c140e 11px)',
           }}
         >
-          <Parallax speed={30} scale={[0.35, 1.5]} style={{
+          <Parallax speed={0} scale={[0.6, 1.2]} >
+            <h1 style={{color: 'white'}} className='text-overlay'>DIGITAL HEART</h1>
+          </Parallax>
+          <Parallax speed={0} scale={[0.35, 1.5]} style={{
               // position:'absolute', left: '20%', zIndex:'100'
             }}
           >
-            <h1 style={{color: 'white'}} className='text-overlay'>DIGITAL HEART</h1>
-            <p style={{color: 'white'}} className='text-overlay'>NFT + AR</p>
-            <Parallax scale={[0.2, 1.2]} rotate={[360, 0]}>
+            <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
               <img src='/gital.png' />
             </Parallax>
           </Parallax>
-          
+          <Parallax speed={0} scale={[0.6, 1.2]}>
+            <h2 style={{color: 'white'}}>NFTs</h2>
+          </Parallax>
+          <Parallax speed={20} scale={[0.6, 1.2]}>
+            <h2 style={{color: 'white'}}>AR</h2>
+          </Parallax>
         </div>
         <div className='centerContentViewport' style={{
           zIndex: '-90',
@@ -302,46 +308,47 @@ export  default function Home() {
             position: 'relative',
           }}
         >
-          <Parallax speed={30} scale={[0.35, 1.5]} style={{
+          <Parallax speed={0} scale={[0.6, 1.2]} >
+              <h1 className='text-overlay'>PHYSICAL CRAFT</h1>
+          </Parallax>
+          <Parallax speed={-30} scale={[0.35, 1.5]} style={{
               // position:'absolute', left: '20%', zIndex:'100'
             }}
           >
-            <h1 className='text-overlay'>PHYSICAL CRAFT</h1>
-            <p className='text-overlay'>
-              GOLD 18/22k </p>
-            <Parallax scale={[0.2, 1.2]} rotate={[360, 0]}>
+            <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
               <img src='/phy.png' />
             </Parallax>
           </Parallax>
+          <Parallax speed={0} scale={[0.6, 1.2]}>
+            <h2>GOLD</h2>
+          </Parallax>
+          <Parallax speed={20} scale={[0.6, 1.2]}>
+            <h2>18 & 22 karat</h2>
+          </Parallax>
           
-        </div>
-        <div className='centerContentViewport' style={{
-            position: 'relative',
-          }}>
         </div>
 
         <div className='centerContentViewport'>
-          <Parallax speed={30} scale={[0.15, 1.5]} style={{ zIndex:'100'}}>
+          <Parallax speed={0} scale={[0.15, 1.5]} style={{ zIndex:'100'}}>
             <h1 className="text-overlay">join our community</h1>
           </Parallax>
           <ChainLisa />
         </div>
-
         <div className='centerContentViewport'style={{backgroundColor:''}}>
-          <Parallax speed={60}  style={{
+          <Parallax speed={-15} scale={[0.2, 0.8]} style={{
                 position:'absolute', zIndex:'100', minWidth:'375px', width:'50vw'
               }}
             >
             <h1 style={{color: 'white'}} className='text-overlay'>
-              Mint it as a digital token
+              Mint our digital token
             </h1>
           </Parallax>
-          <Parallax speed={20} >
+          <Parallax speed={20} scale={[0.2, 0.9]}>
               <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_minting.png" />
           </Parallax>
         </div>
         <div className='centerContentViewport'style={{backgroundColor:''}}>
-          <Parallax speed={60} style={{
+          <Parallax speed={-15} scale={[0.2, 0.8]} style={{
                   position:'absolute', zIndex:'100', minWidth:'375px', width:'50vw'
                 }}
               >
@@ -349,12 +356,12 @@ export  default function Home() {
               Trade it at any time
             </h1>
           </Parallax>
-          <Parallax speed={20} >
+          <Parallax speed={20} scale={[0.2, 0.9]}>
             <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_trading.png" />
           </Parallax>
         </div>
         <div className='centerContentViewport'style={{backgroundColor:''}}>
-          <Parallax speed={60} style={{
+          <Parallax speed={-15} scale={[0.3, 1.3]} style={{
                   position:'absolute', zIndex:'100', minWidth:'375px', width:'50vw'
                 }}
               >
@@ -362,7 +369,7 @@ export  default function Home() {
               Wear it when you want!
             </h1>
           </Parallax>
-          <Parallax speed={20} >
+          <Parallax speed={20} scale={[0.2, 0.9]}>
             <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_wearing.png" />
           </Parallax>
         </div>
@@ -377,6 +384,7 @@ export  default function Home() {
           
         </div>
         <div className='centerContentViewport'>
+          <br /><br /><br /><br /><br />
           <h1>
             Let&apos;s connect!
           </h1>
