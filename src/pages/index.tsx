@@ -42,11 +42,11 @@ export function ReadMore() {
 const TopMenu = () => {
   return (
     <nav >
-      <ul style={topMenuStyles.menuList}>
-        <li style={topMenuStyles.menuItem}><a href='/jewel-list'>Market</a></li>
-        <li style={topMenuStyles.menuItem}><a href='/jewel-mint'>Mint</a></li>
-        <li style={topMenuStyles.menuItem}><a href='/jewel-dashboard'>My jewels</a></li>
-      </ul>
+      {/* <ul style={topMenuStyles.menuList}>
+        <li style={topMenuStyles.menuItem}><link href='/jewel-list'>Market</link></li>
+        <li style={topMenuStyles.menuItem}><link href='/jewel-mint'>Mint</link></li>
+        <li style={topMenuStyles.menuItem}><link href='/jewel-dashboard'>My jewels</link></li>
+      </ul> */}
     </nav>
   );
 };
