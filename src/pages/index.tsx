@@ -43,7 +43,9 @@ const TopMenu = () => {
   return (
     <nav >
       <ul style={topMenuStyles.menuList}>
-        {/* <li style={topMenuStyles.menuItem}><a href='/jewel-list'>My tokens</a></li> */}
+        <li style={topMenuStyles.menuItem}><a href='/jewel-list'>Market</a></li>
+        <li style={topMenuStyles.menuItem}><a href='/jewel-mint'>Mint</a></li>
+        <li style={topMenuStyles.menuItem}><a href='/jewel-dashboard'>My jewels</a></li>
       </ul>
     </nav>
   );
@@ -57,16 +59,16 @@ const ChainLisa = () => {
       <div className='chain-lisa' />
     </Parallax> */}
     <Parallax translateX={['-200px', '00px']} >
-      <img src="/chain-lisa.png" className='chain-lisa'/>
+      <img src="/chain-lisa.png" className='chain-lisa' />
     </Parallax>
     <Parallax translateX={['0px', '-200px']} >
-      <img src="/chain-lisa.png" className='chain-lisa'/>
+      <img src="/chain-lisa.png" className='chain-lisa' />
     </Parallax>
     <Parallax translateX={['-200px', '00px']} >
-      <img src="/chain-lisa.png" className='chain-lisa'/>
+      <img src="/chain-lisa.png" className='chain-lisa' />
     </Parallax>
     <Parallax translateX={['0px', '-200px']} > {/* opacity={[0, 1]} */}
-      <img src="/chain-lisa.png" className='chain-lisa'/>
+      <img src="/chain-lisa.png" className='chain-lisa' />
     </Parallax>
   </>
   );
@@ -97,7 +99,7 @@ const topMenuStyles = {
 
 export function OroseClaim() {
   return (
-    <div style={{margin: 'auto 0',  fontSize: 'clamp(16px, 8vw, 42px)'}}>
+    <div style={{ margin: 'auto 0', fontSize: 'clamp(16px, 8vw, 42px)' }}>
       <br />
       <p>
         <span>
@@ -181,25 +183,25 @@ const PhyGitalMainImage: React.FC<PhyGitalMainImageProps> = ({ imageUrl, fadeDur
   return (
     <div style={{
       position: 'relative',
-      height:'210px',
+      height: '210px',
       display: 'flex',
       justifyContent: 'center'
     }}>
-    <img
-      src={imageUrl}
-      alt="phygital"
-      style={{ 
-        opacity,
-        width: '200vw',
-        maxWidth: '800px',
-        position: 'absolute',
-        display:'block',
-        margin: '0 auto',
-        zIndex: '1000',
-        left:'0px',
-        
-      }}
-    />
+      <img
+        src={imageUrl}
+        alt="phygital"
+        style={{
+          opacity,
+          width: '200vw',
+          maxWidth: '800px',
+          position: 'absolute',
+          display: 'block',
+          margin: '0 auto',
+          zIndex: '1000',
+          left: '0px',
+
+        }}
+      />
     </div>
   );
 };
@@ -235,7 +237,7 @@ const OroseMintGame: React.FC<OroseMintGameProps> = ({ imageUrls }) => {
   );
 };
 
-export  default function Home() {
+export default function Home() {
   return (
     <>
       <Head>
@@ -245,132 +247,139 @@ export  default function Home() {
         <link rel="icon" href="" />
       </Head>
       <div data-bueno-mint="9YGCgZVDVQE6SzcGO9VSE"></div>
-      <main className={styles.main} style={{backgroundColor:''}}>
-        <div className='centerContentViewport' style={{backgroundColor:''} }>
-          {/* <TopMenu /> */}
+      <main className={styles.main} style={{ backgroundColor: '' }}>
+        <div className='centerContentViewport' style={{ backgroundColor: '' }}>
+          <TopMenu />
           <OroseLogo />
           <OroseClaim />
           <OroseVisual />
           <ReadMore />
         </div>
-        <div className='centerContentViewport'>  
-            <Parallax speed={30} scale={[0.15, 1.5]} style={{ zIndex:'100'}}>
-              <h1 className="text-overlay">phygital jewelry</h1>
+        <div className='centerContentViewport'>
+          <Parallax speed={0} style={{ zIndex: '100' }}>
+            <Parallax scale={[0.15, 1.5]}>
+              <h1>a<br />phygital jewelry<br />journey</h1>
             </Parallax>
             <ChainLisa />
-            <Parallax opacity={[0, 1]} scale={[0.15, 1.5]} easing={'easeOutQuad'}>
-          <div style={{position:'absolute', 
-            width:'100vw',
-            height:'100vh',
-            backgroundColor:'black '}}>
-          </div>
-        </Parallax>
+          </Parallax>
+
+          {/* <Parallax opacity={[0, 1]} scale={[0.15, 1.5]} easing={'easeOutQuad'}>
+            <div style={{position:'absolute', 
+              width:'100vw',
+              height:'100vh',
+              backgroundColor:'black '}}>
+            </div>
+          </Parallax> */}
         </div>
         <div
           className='centerContentViewport'
           style={{
-            backgroundColor:'black ',
+            backgroundColor: 'black ',
             position: 'relative',
             backgroundImage: 'repeating-radial-gradient(circle at 0 0,#000000,#000000 10px,#0c140e 10px,#0c140e 11px)',
           }}
         >
-          <Parallax speed={0} scale={[0.6, 1.2]} >
-            <h1 style={{color: 'white'}} className='text-overlay'>DIGITAL HEART</h1>
-          </Parallax>
-          <Parallax speed={0} scale={[0.35, 1.5]} style={{
-              // position:'absolute', left: '20%', zIndex:'100'
-            }}
-          >
-            <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
+          <div style={{ position: 'relative' }}>
+            <Parallax style={{
+              position: 'absolute',
+              top: '0px'
+            }} scale={[0.1, 1.3]}>
+              <h1 style={{ color: 'white' }} >from digital hearth</h1>
+            </Parallax>
+            <Parallax scale={[0.3, 0.65]} rotate={[-900, 0]}>
               <img src='/gital.png' />
             </Parallax>
-          </Parallax>
-          <Parallax speed={0} scale={[0.6, 1.2]}>
-            <h2 style={{color: 'white'}}>NFTs</h2>
-          </Parallax>
-          <Parallax speed={20} scale={[0.6, 1.2]}>
-            <h2 style={{color: 'white'}}>AR</h2>
-          </Parallax>
+          </div>
         </div>
-        <div className='centerContentViewport' style={{
-          zIndex: '-90',
+        {/* <div className='centerContentViewport' style={{
             backgroundColor:'black ',
             position: 'relative',
-            backgroundImage: 'repeating-radial-gradient(circle at 0 0,#000000,#000000 10px,#0c140e 10px,#0c140e 11px);',
+            backgroundImage: 'repeating-radial-gradient(circle at 0 0,#000000,#000000 10px,#0c140e 10px,#0c140e 11px)',
           }}>
-        </div>
-        <Parallax opacity={[1, 0]} scale={[1.5, 0.15]}  easing={'easeOutQuad'}>
+        </div> */}
+        {/* <Parallax opacity={[1, 0]} scale={[1.5, 0.15]}  easing={'easeOutQuad'}>
             <div style={{position:'absolute', width:'100vw', height:'100vh', backgroundColor:'black '}}></div>
-        </Parallax>
+        </Parallax> */}
         <div
           className='centerContentViewport'
           style={{
             position: 'relative',
           }}
         >
-          <Parallax speed={0} scale={[0.6, 1.2]} >
-              <h1 className='text-overlay'>PHYSICAL CRAFT</h1>
-          </Parallax>
-          <Parallax speed={-30} scale={[0.35, 1.5]} style={{
-              // position:'absolute', left: '20%', zIndex:'100'
-            }}
-          >
+          <div style={{ position: 'relative' }}>
+            <Parallax style={{ position: 'absolute', top: '0px' }} speed={0} scale={[0.6, 1.2]} >
+              <h1>to physical craft</h1>
+            </Parallax>
             <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
               <img src='/phy.png' />
             </Parallax>
-          </Parallax>
-          <Parallax speed={0} scale={[0.6, 1.2]}>
-            <h2>GOLD</h2>
-          </Parallax>
-          <Parallax speed={20} scale={[0.6, 1.2]}>
-            <h2>18 & 22 karat</h2>
-          </Parallax>
-          
+          </div>
         </div>
-
         <div className='centerContentViewport'>
-          <Parallax speed={0} scale={[0.15, 1.5]} style={{ zIndex:'100'}}>
-            <h1 className="text-overlay">join our community</h1>
+          <Parallax speed={0} scale={[0.6, 1.2]}>
+            <h2>Decentralized ownership</h2>
+            <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+              <div style={{flex: '0 0 10%'}} ><img style={{maxWidth: '100%', height: 'auto'}} src='/opensea-logo.png'/></div>
+              <div style={{flex: '0 0 15%'}} ><img style={{maxWidth: '100%', height: 'auto'}} src='/metamask_logo.svg'/></div>
+              <div style={{flex: '0 0 10%'}} ><img style={{maxWidth: '100%', height: 'auto'}} src='/blur-logo.jpg'/></div>
+            </div>
+          </Parallax>
+        </div>
+        <div className='centerContentViewport'>
+          <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
+            <h2>Gold only</h2>
+            <p>18 & 22 karat alloys only</p>
+          </Parallax>
+        </div>
+        <div className='centerContentViewport'>
+          <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
+            <h1>Try it on!</h1>
+            <p style={{color:'gold' }}>⌛AR demo coming soon...</p>
+          </Parallax>
+        </div>
+        <div className='centerContentViewport'>
+          <Parallax speed={0} scale={[0.15, 1.5]} style={{ zIndex: '100' }}>
+            <h1>Jump onboard!</h1>
           </Parallax>
           <ChainLisa />
         </div>
-        <div className='centerContentViewport'style={{backgroundColor:''}}>
+        <div className='centerContentViewport' style={{ backgroundColor: '' }}>
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
-                position:'absolute', zIndex:'100', minWidth:'375px', width:'50vw'
-              }}
-            >
-            <h1 style={{color: 'white'}} className='text-overlay'>
-              Mint our digital token
+            position: 'absolute', zIndex: '100', minWidth: '375px', width: '80vw'
+          }}
+          >
+            <h1 style={{ color: 'white' }} >
+              Mint your digital token
             </h1>
           </Parallax>
-          <Parallax speed={20} scale={[0.2, 0.9]}>
-              <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_minting.png" />
+          <Parallax speed={0} scale={[0.2, 0.9]}>
+            <img style={{ height: '100vh' }} src="/pics/photo/smart_looking_girl_minting.png" />
           </Parallax>
         </div>
-        <div className='centerContentViewport'style={{backgroundColor:''}}>
+        <div className='centerContentViewport' style={{ backgroundColor: '' }}>
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
-                  position:'absolute', zIndex:'100', minWidth:'375px', width:'50vw'
-                }}
-              >
-            <h1 style={{color: 'white'}} className='text-overlay'>
+            position: 'absolute', zIndex: '100', minWidth: '375px', width: '80vw'
+          }}
+          >
+            <h1 style={{ color: 'white' }} >
               Trade it at any time
             </h1>
           </Parallax>
-          <Parallax speed={20} scale={[0.2, 0.9]}>
-            <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_trading.png" />
+          <Parallax speed={0} scale={[0.2, 0.9]}>
+            <img style={{ height: '100vh' }} src="/pics/photo/smart_looking_girl_trading.png" />
           </Parallax>
         </div>
-        <div className='centerContentViewport'style={{backgroundColor:''}}>
-          <Parallax speed={-15} scale={[0.3, 1.3]} style={{
-                  position:'absolute', zIndex:'100', minWidth:'375px', width:'50vw'
-                }}
-              >
-            <h1 style={{color: 'white'}} className='text-overlay'>
+        <div className='centerContentViewport' style={{ backgroundColor: '' }}>
+          <Parallax speed={-15} scale={[0.2, 0.8]} style={{
+            position: 'absolute', zIndex: '100', minWidth: '375px', width: '80vw'
+          }}
+          >
+            <h1 style={{ color: 'white' }} >
               Wear it when you want!
             </h1>
           </Parallax>
-          <Parallax speed={20} scale={[0.2, 0.9]}>
-            <img style={{height:'100vh'}} src="/pics/photo/smart_looking_girl_wearing.png" />
+          <Parallax speed={0} scale={[0.2, 0.9]}>
+            <img style={{ height: '100vh' }} src="/pics/photo/smart_looking_girl_wearing.png" />
           </Parallax>
         </div>
         {/* <Parallax translateX={['00px', '-200px']}>
@@ -381,7 +390,7 @@ export  default function Home() {
           <OroseMintGame imageUrls={["/orose_000-3D_11.png", "/orose_000-3D_1.png", "/orose_000-3D_2.png", "/orose_000-3D_4.png", "orose_000-3D_7.png"]} />
         </div> */}
         <div className='centerContentViewport'>
-          
+
         </div>
         <div className='centerContentViewport'>
           <br /><br /><br /><br /><br />
