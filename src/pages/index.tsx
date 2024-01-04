@@ -6,14 +6,23 @@ import { Parallax } from 'react-scroll-parallax';
 import Footer from '../components/footer'
 import Topmenu from '../components/topmenu'
 import Image from 'next/image'
-
-
+import oroseLogo from '../../public/orose-logo.png'
+import oroseVisual22 from '../../public/orose-visual-22.gif'
+import chainLisa from '../../public/chain-lisa-xs.png'
+import gital from '../../public/gital.png'
+import phy from '../../public/phy.png'
+import openseaLogo from '../../public/opensea-logo.png'
+import metamaskLogo from '../../public/metamask_logo.svg'
+import blurLogo from '../../public/blur-logo.jpg'
+import smartLookingGirlMinting from '../../public/pics/photo/smart_looking_girl_minting.png'
+import smartLookingGirlTrading from '../../public/pics/photo/smart_looking_girl_trading.png'
+import smartLookingGirlWearing from '../../public/pics/photo/smart_looking_girl_wearing.png'
 
 export function OroseLogo() {
   return (
     <>
       <br />
-      <Image alt="" src="/orose-logo.png" style={{ width: '60vw', maxWidth: '400px' }} loading="lazy" />
+      <Image alt="" src={oroseLogo} style={{ width: '60vw', maxWidth: '400px', height: 'auto' }} />
     </>
   )
 }
@@ -22,10 +31,7 @@ export function OroseVisual() {
   return (
     <>
       <br />
-      <Image alt="" src="/orose-visual-22.gif" style={{ width: '80vw', maxWidth: '400px' }} loading="lazy" />
-      {/* <Image alt="" src="/orose-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
-      <Image alt="" src="/orose-liscio-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
-      <Image alt="" src="/orose-liscio-visual-18.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/> */}
+      <Image alt="" src={oroseVisual22} style={{ width: '80vw', maxWidth: '400px', height: 'auto' }} />
     </>
   )
 }
@@ -46,16 +52,16 @@ const ChainLisa = () => {
       <div className='chain-lisa' />
     </Parallax> */}
     <Parallax translateX={['-200px', '00px']} >
-      <Image alt="" src="/chain-lisa.png" className='chain-lisa' />
+      <Image alt="" src={chainLisa} className='chain-lisa' />
     </Parallax>
     <Parallax translateX={['0px', '-200px']} >
-      <Image alt="" src="/chain-lisa.png" className='chain-lisa' />
+      <Image alt="" src={chainLisa} className='chain-lisa' />
     </Parallax>
     <Parallax translateX={['-200px', '00px']} >
-      <Image alt="" src="/chain-lisa.png" className='chain-lisa' />
+      <Image alt="" src={chainLisa} className='chain-lisa' />
     </Parallax>
     <Parallax translateX={['0px', '-200px']} > {/* opacity={[0, 1]} */}
-      <Image alt="" src="/chain-lisa.png" className='chain-lisa' />
+      <Image alt="" src={chainLisa} className='chain-lisa' />
     </Parallax>
   </>
   );
@@ -283,7 +289,7 @@ export default function Home() {
               <h1 style={{ color: 'white' }} >from digital hearth</h1>
             </Parallax>
             <Parallax scale={[0.3, 0.65]} rotate={[-900, 0]}>
-              <Image alt="" src='/gital.png' />
+              <Image alt="" src={gital} />
             </Parallax>
           </div>
         </div>
@@ -307,7 +313,7 @@ export default function Home() {
               <h1>to physical craft</h1>
             </Parallax>
             <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
-              <Image alt="" src='/phy.png' />
+              <Image alt="" src={phy} />
             </Parallax>
           </div>
         </div>
@@ -315,9 +321,9 @@ export default function Home() {
           <Parallax speed={0} scale={[0.6, 1.2]}>
             <h2>Decentralized ownership</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src='/opensea-logo.png' /></div>
-              <div style={{ flex: '0 0 15%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src='/metamask_logo.svg' /></div>
-              <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src='/blur-logo.jpg' /></div>
+              <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={openseaLogo} /></div>
+              <div style={{ flex: '0 0 15%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={metamaskLogo} /></div>
+              <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={blurLogo} /></div>
             </div>
           </Parallax>
         </div>
@@ -349,7 +355,7 @@ export default function Home() {
             </h1>
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]}>
-            <Image alt="" style={{ height: '100vh' }} src="/pics/photo/smart_looking_girl_minting.png" />
+            <Image alt="" style={{ height: '100vh', width: 'auto'}} src={smartLookingGirlMinting} />
           </Parallax>
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
@@ -362,7 +368,7 @@ export default function Home() {
             </h1>
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]}>
-            <Image alt="" style={{ height: '100vh' }} src="/pics/photo/smart_looking_girl_trading.png" />
+            <Image alt="" style={{ height: '100vh', width: 'auto'}} src={smartLookingGirlTrading} />
           </Parallax>
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
@@ -374,8 +380,8 @@ export default function Home() {
               Wear it when you want!
             </h1>
           </Parallax>
-          <Parallax speed={0} scale={[0.2, 0.9]}>
-            <Image alt="" style={{ height: '100vh' }} src="/pics/photo/smart_looking_girl_wearing.png" />
+          <Parallax speed={0} scale={[0.2, 0.9]}> 
+            <Image alt="" style={{ height: '100vh', width: 'auto'}} src={smartLookingGirlWearing} />
           </Parallax>
         </div>
         {/* <Parallax translateX={['00px', '-200px']}>

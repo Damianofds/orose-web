@@ -2,6 +2,7 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
 import Image from 'next/image'
+import oroseLogo from '../../public/orose-logo.png'
 
 export default function Footer() {
 
@@ -9,7 +10,7 @@ export default function Footer() {
         return (
           <>
             <br />
-            <Image src="/orose-logo.png" alt="" style={{ width: '10vw', maxWidth: '200px' }} />
+            <Image src={oroseLogo} alt="" style={{ width: '10vw', height: 'auto', maxWidth: '200px' }} />
           </>
         )
       }
