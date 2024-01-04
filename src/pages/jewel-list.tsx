@@ -5,16 +5,18 @@ import React, { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons'
 import { Parallax } from 'react-scroll-parallax';
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 
 
 export function OroseVisual() {
   return (
     <>
-      <img src="/orose-visual-22.gif" style={{ width: '30vw', maxWidth: '400px' }} loading="lazy" />
-      {/* <img src="/orose-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
-      <img src="/orose-liscio-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
-      <img src="/orose-liscio-visual-18.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/> */}
+      <Image alt="" src="/orose-visual-22.gif" style={{ width: '30vw', maxWidth: '400px' }} loading="lazy" />
+      {/* <Image alt="" src="/orose-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
+      <Image alt="" src="/orose-liscio-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
+      <Image alt="" src="/orose-liscio-visual-18.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/> */}
     </>
   )
 }
@@ -107,10 +109,10 @@ export  default function Home() {
         </div>
         <div className="cta">YOUR JEWELS</div>
         <Link href='/jewel-dashboard'>
-          <img style={{maxWidth: '70%', lineHeight:'.8'}} className="jewelImage" src="/orose_000-3D_7.png" />
+          <Image alt="" style={{maxWidth: '70%', lineHeight:'.8'}} className="jewelImage" src="/orose_000-3D_7.png" />
         </Link>
         <p style={{fontSize: '2em', lineHeight:'.8'}}>fds bracelet</p>
-        <img style={{maxWidth: '70%', lineHeight:'.8'}} className="jewelImage" src="/orose_000-3D_7.png" />
+        <Image alt="" style={{maxWidth: '70%', lineHeight:'.8'}} className="jewelImage" src="/orose_000-3D_7.png" />
         <p style={{fontSize: '2em', lineHeight:'.8'}}>+ Claim another one</p>
       </main>
     </>

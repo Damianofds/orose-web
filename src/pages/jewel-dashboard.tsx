@@ -4,15 +4,17 @@ import { Typewriter } from 'react-simple-typewriter'
 import React, { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons'
 import { Parallax } from 'react-scroll-parallax';
+import Image from 'next/image'
+
 
 
 export function OroseVisual() {
   return (
     <>
-      <img src="/orose-visual-22.gif" style={{ width: '30vw', maxWidth: '400px' }} loading="lazy" />
-      {/* <img src="/orose-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
-      <img src="/orose-liscio-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
-      <img src="/orose-liscio-visual-18.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/> */}
+      <Image alt="" src="/orose-visual-22.gif" style={{ width: '30vw', maxWidth: '400px' }} loading="lazy" />
+      {/* <Image alt="" src="/orose-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
+      <Image alt="" src="/orose-liscio-visual-22.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/>
+      <Image alt="" src="/orose-liscio-visual-18.gif" style={{ width:'80vw', maxWidth:'400px' }} loading="lazy"/> */}
     </>
   )
 }
@@ -137,7 +139,7 @@ export  default function Home() {
         <div style={{paddingBottom:'5vh', paddingTop:'5vh', fontSize:'20vw'}}>FORGE IT NOW!</div>
         <div className="grid-container">
           <div className="item2">
-            <img style={{maxWidth: '70%', lineHeight:'.8', paddingBottom:'5vh', paddingTop:'5vh'}} className="jewelImage" src="/orose_000-3D_7.png" />
+            <Image alt="" style={{maxWidth: '70%', lineHeight:'.8', paddingBottom:'5vh', paddingTop:'5vh'}} className="jewelImage" src="/orose_000-3D_7.png" />
           </div>  
           <div>
             <KeyFigure quantity='20' uom='grams'/>
