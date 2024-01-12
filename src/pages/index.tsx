@@ -17,6 +17,7 @@ import blurLogo from '../../public/blur-logo.jpg'
 import smartLookingGirlMinting from '../../public/pics/photo/smart_looking_girl_minting.png'
 import smartLookingGirlTrading from '../../public/pics/photo/smart_looking_girl_trading.png'
 import smartLookingGirlWearing from '../../public/pics/photo/smart_looking_girl_wearing.png'
+import Swirl from "../components/swirl"
 
 export function OroseLogo() {
   return (
@@ -231,6 +232,7 @@ const OroseMintGame: React.FC<OroseMintGameProps> = ({ imageUrls }) => {
 };
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -257,10 +259,7 @@ export default function Home() {
               <h1>a phygital</h1>
             </Parallax>
             <Parallax scale={[0.15, 1.5]}>
-              <h1>jewelry</h1>
-            </Parallax>
-            <Parallax scale={[0.15, 1.5]}>
-              <h1>journey</h1>
+              <h1>jewel</h1>
             </Parallax>
             <ChainLisa />
           </Parallax>
@@ -282,13 +281,17 @@ export default function Home() {
           }}
         >
           <div style={{ position: 'relative' }}>
+            <Swirl />
             <Parallax style={{
               position: 'absolute',
-              top: '0px'
+              top: '20%'
             }} scale={[0.1, 1.3]}>
               <h1 style={{ color: 'white' }} >from digital hearth</h1>
             </Parallax>
-            <Parallax scale={[0.3, 0.65]} rotate={[-900, 0]}>
+            <Parallax style={{
+              position: 'absolute',
+              top: '30%'
+            }} scale={[0.3, 0.65]} rotate={[-900, 0]}>
               <Image alt="" src={gital} />
             </Parallax>
           </div>
@@ -392,23 +395,11 @@ export default function Home() {
           <OroseMintGame imageUrls={["/orose_000-3D_11.png", "/orose_000-3D_1.png", "/orose_000-3D_2.png", "/orose_000-3D_4.png", "orose_000-3D_7.png"]} />
         </div> */}
         <div className='centerContentViewport'>
-
+        
         </div>
-        <div className='centerContentViewport'>
-          <br /><br /><br /><br /><br />
-          <h1>
-            Mint soon
-          </h1>
-          <p>
-            Get notified
-          </p>
-
-          No mailing list - just 1 single email
-
-        </div>
+        
         <div className='centerContentViewport'>
           <Footer />
-
         </div>
       </main>
     </>

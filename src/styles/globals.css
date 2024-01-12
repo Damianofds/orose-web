@@ -91,20 +91,17 @@ p {
 }
 
 button {
-  font-family: 'Italiana', serif;
   background: black;
-  border-width: 3px;
-  border-style: outset;
+  /* border-width: 3px; */
+  border-radius: 3px;
   color: #ccb400;
-  font-size: 20px;
   position: relative;
   overflow: visible;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
-  width: 40vw;
-  max-width: 200px;
-  height: 10vh;
-  height: 50px; 
+  padding: 1%;
+  border-style: solid;
+  height: 45px;
 } 
 
 .centerContentViewport{

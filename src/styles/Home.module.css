@@ -29,9 +29,6 @@
 }
 
 
-.button {
-}
-
 .button:hover{
   border-color: #a99500;
   border-style: solid;
