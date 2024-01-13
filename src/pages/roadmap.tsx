@@ -9,20 +9,25 @@ export default function Roadmap() {
     return (
         <>
             <Topmenu />
-            <div className='fade-in-container'>
+            <div className='fade-in-container' style={{paddingLeft: '10%', paddingRight: '10%'}}>
                 <h1>Our roadmap</h1>
             </div>
-            <div style={{textAlign: 'left', maxWidth: '800px', margin: '0 auto'}}>
-                <h3>Our Pyhgital Journey</h3>
+            <div style={{textAlign: 'left', maxWidth: '1280px', margin: '0 auto', paddingLeft: '10%', paddingRight: '10%'}}>
                 <p>We&apos;re not your regular jewelry company. We&apos;re pyhgital—a funky term for bringing the best of physical and digital together. Our goal? To revolutionize how you see, own, and trade jewels by infusing them with stories and tech magic.</p>
                 <br/>
                 <h3>More than Shiny Things</h3>
                 <p>We&apos;re all about vibes, stories, and personal connections. Our forthcoming collections? They&apos;re not just about gold and gems; they&apos;re about capturing moments, celebrating cultures, and letting you express yourself in ways beyond traditional jewelry.</p>
-                <Image alt="" src={Collection} style={{maxWidth:'800px', height:'auto'}}/>
+                <br /><br />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Image alt="" src={Collection} style={{width: '100vw', maxWidth:'800px', height:'auto'}}/>
+                </div>
                 <br/>
                 <h3>Craft and Transparency</h3>
                 <p>Craftsmanship matters, we take that seriously! Expect top-notch quality, meticulous details, and a journey transparent as a clean window. Your jewelry&apos;s story—from inception to delivery—will be an open book.</p>
-                <Image alt="" src={Lab} style={{maxWidth:'800px', height:'auto'}}/>
+                <br /><br />
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Image alt="" src={Lab} style={{width: '100vw', maxWidth:'800px', height:'auto'}}/>
+                </div>
                 <br/>
                 <h3>Augmented Reality, Let&apos;s Play!</h3>
                 <p>Who said jewelry can&apos;t be fun? Our AR experience isn&apos;t just a button to click; it&apos;s a playground! Imagine trying on your favorite piece virtually before deciding it&apos;s `the one`. Cool, huh?</p>
