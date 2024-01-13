@@ -40,7 +40,7 @@ export default function Footer() {
                     VAT ID 02680990468
                     <br />
                     hi@orose.gold
-                </div>
+            </div>
                 
                 {/* <div style={{ flex: '0 0 10%' }}></div> */}
 

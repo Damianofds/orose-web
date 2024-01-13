@@ -327,8 +327,8 @@ export default function Home() {
         </Parallax> */}
         <div className='centerContentViewport'>
           <div style={{ position: 'relative'}}>
-            <Parallax style={{ position: 'absolute', top: '0px' }} speed={0} scale={[0.6, 1.2]} >
-              <h1>Physical craft</h1>
+            <Parallax speed={0} scale={[0.6, 1.2]} >
+              <h1>Physical<br/>craft</h1>
             </Parallax>
             <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
               <Image alt="" src={phy} />
@@ -356,40 +356,53 @@ export default function Home() {
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
-            position: 'absolute', zIndex: '100', minWidth: '375px', width: '80vw'
-          }}
+            position: 'absolute', zIndex: '100', minWidth: '375px'}}
           >
-            <h1 style={{ color: 'white' }} >
+            <h1 style={{ background: 'rgba(194, 122, 116, 0.3)' }} >
               Mint your digital token
             </h1>
+            {/* <Image alt="" src={gital} style={{width: '50vw', minWidth: '350px', height: 'auto'}}/> */}
           </Parallax>
-          <Parallax speed={0} scale={[0.2, 0.9]}>
+          <Parallax speed={0} scale={[0.2, 0.9]} style={{
+            display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          >
             <Image alt="" style={{ height: '100vh', width: 'auto' }} src={smartLookingGirlMinting} />
           </Parallax>
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
-            position: 'absolute', zIndex: '100', minWidth: '375px', width: '80vw'
+            position: 'absolute', zIndex: '100', minWidth: '375px'
           }}
           >
-            <h1 style={{ color: 'white' }} >
-              Trade it at any time
-            </h1>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ flex: '0 0 100%' }} >
+                  <h1  style={{ background: 'rgba(194, 122, 116, 0.6)' }}  >
+                    Trade it at any time
+                  </h1>
+                </div>
+                {/* <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '20vw', height: 'auto', padding: '10%' }} src={openseaLogo} /></div>
+                <div style={{ flex: '0 0 10%' }} ></div>
+                <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '20vw', height: 'auto', padding: '10%'  }} src={blurLogo} /></div> */}
+            </div>
           </Parallax>
-          <Parallax speed={0} scale={[0.2, 0.9]}>
+          <Parallax speed={0} scale={[0.2, 0.9]} style={{
+            display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          >
             <Image alt="" style={{ height: '100vh', width: 'auto' }} src={smartLookingGirlTrading} />
           </Parallax>
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
-            position: 'absolute', zIndex: '100', minWidth: '375px', width: '80vw'
+            position: 'absolute', zIndex: '100', minWidth: '375px'
           }}
           >
-            <h1 style={{ color: 'white' }} >
+            <h1  style={{ background: 'rgba(194, 122, 116, 0.6)' }} >
               Wear it when you want!
             </h1>
           </Parallax>
-          <Parallax speed={0} scale={[0.2, 0.9]}>
+          <Parallax speed={0} scale={[0.2, 0.9]} style={{
+            display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          >
             <Image alt="" style={{ height: '100vh', width: 'auto' }} src={smartLookingGirlWearing} />
           </Parallax>
         </div>

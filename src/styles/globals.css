@@ -6,7 +6,10 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
+
+   /* Hash code is  #C27A74 */
   --background-start-rgb: 194, 122, 116;
+  
   --background-end-rgb: 194, 122, 116;
 
   --primary-glow: conic-gradient(
