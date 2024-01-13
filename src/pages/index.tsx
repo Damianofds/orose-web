@@ -358,7 +358,7 @@ export default function Home() {
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
             position: 'absolute', zIndex: '100', minWidth: '375px'}}
           >
-            <h1 style={{ background: 'rgba(194, 122, 116, 0.3)' }} >
+            <h1   style={{ color: "white", textShadow: '4px 4px 1px black' }}  >
               Mint your digital token
             </h1>
             {/* <Image alt="" src={gital} style={{width: '50vw', minWidth: '350px', height: 'auto'}}/> */}
@@ -376,7 +376,7 @@ export default function Home() {
           >
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
                 <div style={{ flex: '0 0 100%' }} >
-                  <h1  style={{ background: 'rgba(194, 122, 116, 0.6)' }}  >
+                  <h1 style={{ color: "white", textShadow: '4px 4px 1px black' }}   >
                     Trade it at any time
                   </h1>
                 </div>
@@ -396,7 +396,7 @@ export default function Home() {
             position: 'absolute', zIndex: '100', minWidth: '375px'
           }}
           >
-            <h1  style={{ background: 'rgba(194, 122, 116, 0.6)' }} >
+            <h1  style={{ color: "white", textShadow: '4px 4px 1px black' }} >
               Wear it when you want!
             </h1>
           </Parallax>
