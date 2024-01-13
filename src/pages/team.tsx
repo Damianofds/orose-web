@@ -10,7 +10,7 @@ export default function Team() {
         <>
             <Topmenu />
             <div>
-                <h1>The team</h1>
+                <h1 className='fade-in-container'>The team</h1>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
 
@@ -25,6 +25,7 @@ export default function Team() {
                     <p>not-yet-public</p>
                 </div>
             </div>
+            <hr/>
             <Footer />
         </>
     )

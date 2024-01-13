@@ -11,35 +11,37 @@ export default function Footer() {
         return (
             <>
                 <br />
-                <Image src={oroseLogo} alt="" style={{ width: '10vw', height: 'auto', maxWidth: '200px' }} />
+                <Image src={oroseLogo} alt="" style={{ width: '10vw', height: 'auto', minWidth: '100px', maxWidth: '200px' }} />
             </>
         )
     }
 
     return (
         <>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', borderTopWidth: '1px', borderTopStyle: 'solid', textAlign: 'left', paddingTop: '3vh', paddingRight: '20vw', paddingLeft: '20vw' }}>
-                <div style={{ flex: '0 0 50%' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', textAlign: 'left', paddingTop: '0vh', paddingRight: '20vw', paddingLeft: '20vw' }}>
+                <br />
+                <div style={{minWidth: '350px', width:'20vw', paddingLeft: '5vw'}}>
                     <OroseLogo />
-                    <p><Link style={{ textDecorationLine: 'none' }} href='/roadmap'>Roadmap</Link></p>
-                    <p><Link style={{ textDecorationLine: 'none' }} href='/team'>Team</Link></p>
+                    <p>EVENT REMINDER</p>
+                    ✨ The first mint ever 👇
+                    <MailCollector />
+                </div>
+                <div style={{minWidth: '350px', width:'20vw', paddingLeft: '5vw'}}>
+                    <br/><br/>
+                    <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '70%' }} /> Get in touch on x.com
+                    <br/><br/>
+                    <div><Link style={{ textDecorationLine: 'none' }} href='/roadmap'>- Our roadmap</Link></div>
+                    <div><Link style={{ textDecorationLine: 'none' }} href='/team'>- The team</Link></div>
+                    <br/>
+                    Our office is in Piazza Annibaliano, Rome (IT)
                     <br />
-                    <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '80%' }} />
-                    <br />
-                    <br />
-                    registered office Corso Trieste 185, Roma (IT)
-                    <br />
-                    jewel production lab in Munich (DE)
+                    Our jewel production lab is in Munich (DE)
                     <br />
                     VAT ID 02680990468
                     <br />
                     hi@orose.gold
                 </div>
-                <div style={{ flex: '0 0 50%' }}>
-                    <p>First mint event reminder</p>
-                    <br/>
-                    <MailCollector />
-                </div>
+                
                 {/* <div style={{ flex: '0 0 10%' }}></div> */}
 
                 <br />

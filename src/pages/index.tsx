@@ -14,16 +14,16 @@ import phy from '../../public/phy.png'
 import openseaLogo from '../../public/opensea-logo.png'
 import metamaskLogo from '../../public/metamask_logo.svg'
 import blurLogo from '../../public/blur-logo.jpg'
-import smartLookingGirlMinting from '../../public/pics/photo/smart_looking_girl_minting.png'
-import smartLookingGirlTrading from '../../public/pics/photo/smart_looking_girl_trading.png'
-import smartLookingGirlWearing from '../../public/pics/photo/smart_looking_girl_wearing.png'
+import smartLookingGirlMinting from '../../public/pics/photo/2-cool-minting.png'
+import smartLookingGirlTrading from '../../public/pics/photo/2-cool-trading.png'
+import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.png'
 import Swirl from "../components/swirl"
 
 export function OroseLogo() {
   return (
     <>
       <br />
-      <Image alt="" src={oroseLogo} style={{ width: '60vw', maxWidth: '400px', height: 'auto' }} />
+      <Image className="fade-in-container" alt="" src={oroseLogo} style={{ width: '60vw', maxWidth: '400px', height: 'auto' }} />
     </>
   )
 }
@@ -32,18 +32,18 @@ export function OroseVisual() {
   return (
     <>
       <br />
-      <Image alt="" src={oroseVisual22} style={{ width: '80vw', maxWidth: '400px', height: 'auto' }} />
+      <Image className="fade-in-container" alt="" src={oroseVisual22} style={{ width: '80vw', maxWidth: '400px', height: 'auto' }} />
     </>
   )
 }
 
 export function ReadMore() {
   return (
-    <>
+    <div className="fade-in-container-slow">
       <br />
       <p>let&apos;s go</p>
       <p>👇</p>
-    </>
+    </div>
   )
 }
 
@@ -280,19 +280,39 @@ export default function Home() {
             backgroundImage: 'repeating-radial-gradient(circle at 0 0,#000000,#000000 10px,#0c140e 10px,#0c140e 11px)',
           }}
         >
-          <div style={{ position: 'relative' }}>
-            <Swirl />
+          <div style={{
+            position: 'relative',
+            margin: '0',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            // height: '100vh',
+          }}>
+            <Swirl style={{
+              minWidth: '1000px'
+            }} />
             <Parallax style={{
               position: 'absolute',
-              top: '20%'
+              top: '5%',
             }} scale={[0.1, 1.3]}>
-              <h1 style={{ color: 'white' }} >from digital hearth</h1>
+              <h1 style={{ color: "white", textShadow: '4px 4px 1px green' }} >Digital hearth</h1>
             </Parallax>
             <Parallax style={{
               position: 'absolute',
-              top: '30%'
+              top: '20%'
             }} scale={[0.3, 0.65]} rotate={[-900, 0]}>
               <Image alt="" src={gital} />
+            </Parallax>
+            <Parallax style={{
+              position: 'absolute',
+              top: '50%'
+            }} speed={0} scale={[0.6, 1.2]}>
+              <h2 style={{ color: "white", textShadow: '4px 4px 1px green' }} >Decentralized ownership</h2>
+              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={openseaLogo} /></div>
+                <div style={{ flex: '0 0 15%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={metamaskLogo} /></div>
+                <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={blurLogo} /></div>
+              </div>
             </Parallax>
           </div>
         </div>
@@ -305,15 +325,10 @@ export default function Home() {
         {/* <Parallax opacity={[1, 0]} scale={[1.5, 0.15]}  easing={'easeOutQuad'}>
             <div style={{position:'absolute', width:'100vw', height:'100vh', backgroundColor:'black '}}></div>
         </Parallax> */}
-        <div
-          className='centerContentViewport'
-          style={{
-            position: 'relative',
-          }}
-        >
-          <div style={{ position: 'relative' }}>
+        <div className='centerContentViewport'>
+          <div style={{ position: 'relative'}}>
             <Parallax style={{ position: 'absolute', top: '0px' }} speed={0} scale={[0.6, 1.2]} >
-              <h1>to physical craft</h1>
+              <h1>Physical craft</h1>
             </Parallax>
             <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
               <Image alt="" src={phy} />
@@ -321,19 +336,10 @@ export default function Home() {
           </div>
         </div>
         <div className='centerContentViewport'>
-          <Parallax speed={0} scale={[0.6, 1.2]}>
-            <h2>Decentralized ownership</h2>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={openseaLogo} /></div>
-              <div style={{ flex: '0 0 15%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={metamaskLogo} /></div>
-              <div style={{ flex: '0 0 10%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={blurLogo} /></div>
-            </div>
-          </Parallax>
-        </div>
-        <div className='centerContentViewport'>
           <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
-            <h2>Gold only</h2>
-            <p>18 & 22 karat alloys only</p>
+            <h1>Gold alloys</h1> 
+            <h1>only</h1>
+            <p>18 & 22 karat</p>
           </Parallax>
         </div>
         <div className='centerContentViewport'>
@@ -358,7 +364,7 @@ export default function Home() {
             </h1>
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]}>
-            <Image alt="" style={{ height: '100vh', width: 'auto'}} src={smartLookingGirlMinting} />
+            <Image alt="" style={{ height: '100vh', width: 'auto' }} src={smartLookingGirlMinting} />
           </Parallax>
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
@@ -371,7 +377,7 @@ export default function Home() {
             </h1>
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]}>
-            <Image alt="" style={{ height: '100vh', width: 'auto'}} src={smartLookingGirlTrading} />
+            <Image alt="" style={{ height: '100vh', width: 'auto' }} src={smartLookingGirlTrading} />
           </Parallax>
         </div>
         <div className='centerContentViewport' style={{ backgroundColor: '' }}>
@@ -383,8 +389,8 @@ export default function Home() {
               Wear it when you want!
             </h1>
           </Parallax>
-          <Parallax speed={0} scale={[0.2, 0.9]}> 
-            <Image alt="" style={{ height: '100vh', width: 'auto'}} src={smartLookingGirlWearing} />
+          <Parallax speed={0} scale={[0.2, 0.9]}>
+            <Image alt="" style={{ height: '100vh', width: 'auto' }} src={smartLookingGirlWearing} />
           </Parallax>
         </div>
         {/* <Parallax translateX={['00px', '-200px']}>
@@ -395,9 +401,9 @@ export default function Home() {
           <OroseMintGame imageUrls={["/orose_000-3D_11.png", "/orose_000-3D_1.png", "/orose_000-3D_2.png", "/orose_000-3D_4.png", "orose_000-3D_7.png"]} />
         </div> */}
         <div className='centerContentViewport'>
-        
+
         </div>
-        
+
         <div className='centerContentViewport'>
           <Footer />
         </div>

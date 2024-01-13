@@ -90,6 +90,15 @@ p {
   font-size: clamp(16px, 8vw, 32px);
 }
 
+hr {
+  border: none; /* Remove default border */
+  height: 1px; /* Set height of the line */
+  background-color: black;
+  /* width: 50%; */
+  margin: 3vh 3vh;
+  
+}
+
 button {
   background: black;
   /* border-width: 3px; */
@@ -180,5 +189,38 @@ button {
 
   100% {
     transform: scale(1);
+  }
+}
+
+.fade-in-container {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-container-slow {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

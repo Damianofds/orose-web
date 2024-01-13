@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
-export default function Swirl() {
+interface CustomSvgComponentProps {
+    style?: CSSProperties | undefined;
+  }
+
+
+const Swirl: React.FC<CustomSvgComponentProps> = ({ style }) => {
 
     return (
         <>
-            <svg width="1440" height="3163" viewBox="0 0 1440 3163" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg style={style} width="2440" height="3163" viewBox="0 0 2440 3163" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.6" clipPath="url(#clip0_28_11)">
                     <path d="M16.6572 1774.09C16.6572 1774.09 -509.841 1838.29 -1182.63 1279.31C-1855.42 720.337 -2329.66 1305.57 -2345.76 1308.87" stroke="url(#paint0_linear_28_11)" stroke-width="2" stroke-miterlimit="10" />
                     <path d="M42.0342 1755.92C42.0342 1755.92 -483.589 1827.42 -1156.65 1268.92C-1829.71 710.413 -2299.48 1284.69 -2323.63 1289.62" stroke="url(#paint0_linear_28_11)" stroke-width="2" stroke-miterlimit="10" />
@@ -214,3 +219,5 @@ export default function Swirl() {
 
         </>)
 }
+
+export default Swirl;
