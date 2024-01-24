@@ -9,47 +9,53 @@ export default function Footer() {
 
     function OroseLogo() {
         return (
-            <>
+            <div>
                 <br />
                 <Image src={oroseLogo} alt="" style={{ width: '10vw', height: 'auto', minWidth: '100px', maxWidth: '200px' }} />
-            </>
+            </div>
         )
     }
 
     return (
         <>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', textAlign: 'left', paddingTop: '0vh', paddingRight: '20vw', paddingLeft: '20vw' }}>
-                <br />
-                <div style={{minWidth: '350px', width:'20vw', paddingLeft: '5vw'}}>
+            <div className="typography-details" style={{ userSelect: 'none', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', textAlign: 'left', paddingTop: '0vh', paddingRight: '20vw', paddingLeft: '20vw' }}>
+                <div style={{ minWidth: '350px', width: '25vw', paddingLeft: '5vw', whiteSpace: 'nowrap' }}>
                     <OroseLogo />
-                    <p>EVENT REMINDER</p>
-                    ✨ The first mint ever 👇
-                    <MailCollector />
-                </div>
-                <div style={{minWidth: '350px', width:'20vw', paddingLeft: '5vw'}}>
-                    <br/><br/>
-                    <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '70%' }} /> Get in touch on x.com
-                    <br/><br/>
-                    <div><Link style={{ textDecorationLine: 'none' }} href='/roadmap'>- Our roadmap</Link></div>
-                    <div><Link style={{ textDecorationLine: 'none' }} href='/team'>- The team</Link></div>
-                    <br/>
-                    Our office is in Piazza Annibaliano, Rome (IT)
+                    <br /><br />
+                    <p>Don't miss our mint day!</p>
                     <br />
-                    Our jewel production lab is in Munich (DE)
+                    <MailCollector />
+                    <p>No subscription. One reminder only.</p>
+                </div>
+                <div style={{ minWidth: '350px', width: '25vw', paddingLeft: '5vw', whiteSpace: 'nowrap' }}>
+                    <br />
+                    <div style={{ display: 'flex' }}>
+                        <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '80%', }} />
+                        <p style={{ lineHeight: '50px' }}>Get in touch</p>
+                    </div>
+                    <br />
+                    <p><Link style={{ textDecorationLine: 'none' }} href='/roadmap'>Our roadmap</Link> |
+                        <Link style={{ textDecorationLine: 'none' }} href='/team'> The team</Link></p>
+                    <br />
+                    Piazza Annibaliano, Rome (IT) - office
+                    <br />
+                    Berg am Laim, Munich (DE) - production
                     <br />
                     VAT ID 02680990468
                     <br />
                     hi@orose.gold
-            </div>
-                
-                {/* <div style={{ flex: '0 0 10%' }}></div> */}
+                    <br /><br /><br />
+                </div>
 
-                <br />
-                <br />
 
-                <br />
-                
             </div>
+
+            <br />
+                <br />
+                <br />            
+            <br />
+            <br />
+            <br />
         </>
     )
 }

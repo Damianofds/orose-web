@@ -15,9 +15,12 @@ const topMenuStyles: TopMenuStyles = {
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        borderBottomWidth: '1px',
-        borderBottomStyle: 'solid',
-
+        position: 'fixed',
+        top: '0px',
+        width: '100%',
+        backgroundColor: '#C27A74',
+        zIndex: '200',
+        userSelect: 'none'
         
     },
     menuItem: {
@@ -33,9 +36,9 @@ export default function Topmenu() {
     return (
         <>
             <div style={topMenuStyles.menuList}>
-                    <div style={topMenuStyles.menuItem}><Link style={{textDecorationLine: 'none'}} href='/'>Home</Link></div>
-                    <div style={topMenuStyles.menuItem}><Link style={{textDecorationLine: 'none'}} href='/roadmap'>Roadmap</Link></div>
-                    <div style={topMenuStyles.menuItem}><Link style={{textDecorationLine: 'none'}} href='/team'>Team</Link></div>
+                    <div className='typo-body' style={topMenuStyles.menuItem}><Link style={{textDecorationLine: 'none'}} href='/'>Home</Link></div>
+                    <div className='typo-body' style={topMenuStyles.menuItem}><Link style={{textDecorationLine: 'none'}} href='/roadmap'>Roadmap</Link></div>
+                    <div className='typo-body' style={topMenuStyles.menuItem}><Link style={{textDecorationLine: 'none'}} href='/team'>Team</Link></div>
                     {/* <li style={topMenuStyles.menuItem}><a href='/jewel-list'>Market</a></li>
                     <li style={topMenuStyles.menuItem}><a href='/jewel-mint'>Mint</a></li>
                     <li style={topMenuStyles.menuItem}><a href='/jewel-dashboard'>My jewels</a></li> */}

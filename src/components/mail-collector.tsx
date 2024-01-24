@@ -70,8 +70,6 @@ export default function MailCollector() {
                     Send
                 </button>
                 <br />
-                <i>No subscription. A single message in your inbox only.</i>
-                
                 {isAddressSaved && <p><strong>Got it, see you soon!</strong></p>}
                 {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
             </form>

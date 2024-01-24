@@ -1,59 +1,10 @@
 .main {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  /* align-items: center; */
-  /* width: 90vw; */
-  /* max-width: 800px; */
   margin: 0 auto;
   user-select: none;
-  /* padding: 6rem;
-  min-height: 100vh; */
 }
 
-.mintGameButton{
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  background-color: #af934c;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  line-height: 5rem;
-  text-transform: uppercase;
+.poster {
+  height: 100vh;
+  width: auto;
+  border-radius: 50px;
 }
-
-.mintGameButton:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-
-.button:hover{
-  border-color: #a99500;
-  border-style: solid;
-  border-width: 3px;
-}
-
-/* .button::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  bottom: -50%;
-  left: -50%;
-  background: #21201c;
-  //linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(52, 51, 50) 0%, rgba(229, 172, 142, 0)); 
-  transform: rotateZ(60deg) translate(-4em, 3.5em) scaleY(0.1);  
-}
-
-.button:hover:after
- {
-  animation: sheen 1.5s forwards;
-}
-
-@keyframes sheen {
-  100% {
-    transform: rotateZ(60deg) translate(1em, -50em);
-  }
-} */
