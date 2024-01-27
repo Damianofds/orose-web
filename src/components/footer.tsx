@@ -22,7 +22,7 @@ export default function Footer() {
                 <div style={{ minWidth: '350px', width: '25vw', paddingLeft: '5vw', whiteSpace: 'nowrap' }}>
                     <OroseLogo />
                     <br /><br />
-                    <p>Don't miss our mint day!</p>
+                    <p>Don&apos;t miss our mint day!</p>
                     <br />
                     <MailCollector />
                     <p>No subscription. One reminder only.</p>
