@@ -35,8 +35,8 @@ export function OroseVisual() {
     //   <br />
     //   <Image className="fade-in-container" alt="" src={oroseVisual22} style={{ width: '80vw', maxWidth: '400px', height: 'auto' }} />
     // </>
-    <video autoPlay loop muted playsInline style={{ width: '80vw', maxWidth: '400px', height: 'auto' }}>
-      <source src={'orose-visual-22.webm'} type="video/webm" />
+    <video autoPlay loop muted playsInline style={{ width: '80vw', maxWidth: '400px' }}>
+      <source src={'orose-visual-18.webm'} type="video/webm" />
     </video>
   )
 }
