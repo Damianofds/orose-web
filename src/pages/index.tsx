@@ -24,7 +24,7 @@ export function OroseLogo() {
   return (
     <>
       <br />
-      <Image className="fade-in-container" alt="" src={oroseLogo} style={{ width: '60vw', maxWidth: '400px', height: 'auto' }} />
+      <Image className="fade-in-container" alt="" src={oroseLogo} loading="eager" style={{ width: '60vw', maxWidth: '400px', height: 'auto' }} />
     </>
   )
 }
