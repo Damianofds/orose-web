@@ -7,7 +7,6 @@ import Footer from '../components/footer'
 import Topmenu from '../components/topmenu'
 import Image from 'next/image'
 import oroseLogo from '../../public/orose-logo.png'
-import oroseVisual22 from '../../public/orose-visual-22.gif'
 import chainLisa from '../../public/chain-lisa-xs.png'
 import gital from '../../public/gital.png'
 import phy from '../../public/phy.png'
@@ -20,6 +19,7 @@ import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.png'
 import Swirl from "../components/swirl"
 import oroseSnapcode from "../../public/orose-snapcode.png"
 
+
 export function OroseLogo() {
   return (
     <>
@@ -31,10 +31,13 @@ export function OroseLogo() {
 
 export function OroseVisual() {
   return (
-    <>
-      <br />
-      <Image className="fade-in-container" alt="" src={oroseVisual22} style={{ width: '80vw', maxWidth: '400px', height: 'auto' }} />
-    </>
+    // <>
+    //   <br />
+    //   <Image className="fade-in-container" alt="" src={oroseVisual22} style={{ width: '80vw', maxWidth: '400px', height: 'auto' }} />
+    // </>
+    <video autoPlay loop muted playsInline style={{ width: '80vw', maxWidth: '400px', height: 'auto' }}>
+      <source src={'orose-visual-22.webm'} type="video/webm" />
+    </video>
   )
 }
 

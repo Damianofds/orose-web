@@ -9,8 +9,11 @@
 
    /* Hash code is  #C27A74 */
   --background-start-rgb: 194, 122, 116;
-  
   --background-end-rgb: 194, 122, 116;
+
+  /* Hash code is #FFC9DF */
+  /* --background-start-rgb: 255, 201, 223;
+  --background-end-rgb: 255, 201, 223; */
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
