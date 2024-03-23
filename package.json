@@ -23,6 +23,7 @@
     "react-ts-typewriter": "^0.1.8-b"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.19",
     "typescript": "5.0.3"
   }
 }
