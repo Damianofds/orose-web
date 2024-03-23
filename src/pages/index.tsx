@@ -13,9 +13,9 @@ import phy from '../../public/phy.png'
 import openseaLogo from '../../public/opensea-logo.png'
 import metamaskLogo from '../../public/metamask_logo.svg'
 import blurLogo from '../../public/blur-logo.png'
-import smartLookingGirlMinting from '../../public/pics/photo/2-cool-minting.png'
-import smartLookingGirlTrading from '../../public/pics/photo/2-cool-trading.png'
-import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.png'
+import smartLookingGirlMinting from '../../public/pics/photo/2-cool-minting.webp'
+import smartLookingGirlTrading from '../../public/pics/photo/2-cool-trading.webp'
+import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.webp'
 import Swirl from "../components/swirl"
 import oroseSnapcode from "../../public/orose-snapcode.png"
 
