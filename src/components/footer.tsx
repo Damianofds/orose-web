@@ -3,6 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
 import Image from 'next/image'
 import oroseLogo from '../../public/orose-logo.png'
+import discordLogo from '../../public/discord-logo.png'
 import MailCollector from './mail-collector';
 
 export default function Footer() {
@@ -30,8 +31,12 @@ export default function Footer() {
                 <div style={{ minWidth: '350px', width: '25vw', paddingLeft: '5vw', whiteSpace: 'nowrap' }}>
                     <br />
                     <div style={{ display: 'flex' }}>
+                        <Image src={discordLogo} alt="" style={{ height: '38px', maxWidth: '45px' }} />
+                        <p style={{ lineHeight: '45px' }}>&nbsp;&nbsp;Join our discord server</p>
+                    </div>
+                    <div style={{ display: 'flex' }}>
                         <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '80%', }} />
-                        <p style={{ lineHeight: '50px' }}>Get in touch</p>
+                        <p style={{ lineHeight: '50px' }}>Get in touch on crypto X</p>
                     </div>
                     <br />
                     <p><Link style={{ textDecorationLine: 'none' }} href='/roadmap'>Our roadmap</Link> |
@@ -49,13 +54,6 @@ export default function Footer() {
 
 
             </div>
-
-            <br />
-                <br />
-                <br />            
-            <br />
-            <br />
-            <br />
         </>
     )
 }

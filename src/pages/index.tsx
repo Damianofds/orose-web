@@ -10,12 +10,13 @@ import oroseLogo from '../../public/orose-logo.png'
 import chainLisa from '../../public/chain-lisa-xs.png'
 import gital from '../../public/gital.png'
 import phy from '../../public/phy.png'
-import openseaLogo from '../../public/opensea-logo.png'
 import metamaskLogo from '../../public/metamask_logo.svg'
-import blurLogo from '../../public/blur-logo.png'
+import ethereumLogo from '../../public/ethereum-logo.png'
+import arbitrumLogo from '../../public/arbitrium-logo.png'
 import smartLookingGirlMinting from '../../public/pics/photo/2-cool-minting.webp'
 import smartLookingGirlTrading from '../../public/pics/photo/2-cool-trading.webp'
 import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.webp'
+import discordName from '../../public/discord-name.png'
 import Swirl from "../components/swirl"
 import oroseSnapcode from "../../public/orose-snapcode.png"
 
@@ -186,11 +187,13 @@ export default function Home() {
             <Parallax style={{
               position: 'absolute',
               top: '40%'
-            }} speed={20}  scale={[0, 1]}>
+            }} speed={100}  scale={[0, 2]}>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-                <div style={{ flex: '0 0 30%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={openseaLogo} /></div>
-                <div style={{ flex: '0 0 35%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={metamaskLogo} /></div>
-                <div style={{ flex: '0 0 30%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={blurLogo} /></div>
+                <div  ><Image alt="" style={{ width: '25vw', height: 'auto' }} src={metamaskLogo} /></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div  ><Image alt="" style={{ width: '25vw', height: 'auto' }} src={ethereumLogo} /></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div  ><Image alt="" style={{ width: '25vw', height: 'auto' }} src={arbitrumLogo} /></div>
               </div>
             </Parallax>
           </div>
@@ -244,9 +247,9 @@ export default function Home() {
           <Parallax speed={-15} scale={[0.2, 0.8]} style={{
             position: 'absolute', zIndex: '100', minWidth: '375px'}}
           >
-            <h2 className="typography-heading typography-shadow-black">
+            <p className="typography-heading typography-shadow-black">
               Mint your digital token
-            </h2>
+            </p>
             {/* <Image alt="" src={gital} style={{width: '50vw', minWidth: '350px', height: 'auto'}}/> */}
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]} style={{
@@ -260,9 +263,9 @@ export default function Home() {
             position: 'absolute', zIndex: '100', minWidth: '375px'
           }}
           >
-            <h2 className="typography-heading typography-shadow-black">
+            <p className="typography-heading typography-shadow-black">
               Trade it at any time
-            </h2>
+            </p>
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]} style={{
             display: 'flex', justifyContent: 'center', alignItems: 'center' }}
@@ -275,14 +278,28 @@ export default function Home() {
             position: 'absolute', zIndex: '100', minWidth: '375px'
           }}
           >
-            <h2 className="typography-heading typography-shadow-black">
+            <p className="typography-heading typography-shadow-black">
               Wear it when you want!
-            </h2>
+            </p>
           </Parallax>
           <Parallax speed={0} scale={[0.2, 0.9]} style={{
             display: 'flex', justifyContent: 'center', alignItems: 'center' }}
           >
             <Image alt="" className={styles.poster} src={smartLookingGirlWearing} />
+          </Parallax>
+        </div>
+        <div className='centerContentViewport'>
+          <Parallax speed={0} scale={[0.2, 0.9]} style={{
+              display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+            >
+            <p className="typography-body">
+                Join our community on
+            </p>
+          </Parallax>
+          <Parallax speed={0} scale={[0.2, 1.1]} style={{
+              display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+            >
+            <Image src={discordName} alt="" style={{ height: 'auto', maxWidth: '40vw', minWidth: '300px' }} />
           </Parallax>
         </div>
         <div className='centerContentViewport'>
