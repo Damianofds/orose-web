@@ -217,10 +217,21 @@ export default function Home() {
         </div> */}
         <div className='centerContentViewport'>
           <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
+            <video autoPlay loop muted playsInline style={{ width: '80vw', maxWidth: '400px' }}>
+              <source src={'wrist-lens.mp4'} type="video/mp4" />
+            </video>
             <h2 className="typography-heading">Try it on!</h2>
             <Image alt="" src={oroseSnapcode} />
             <br /><br />
-            <p className="typography-body">Scan the snapcode with your snapchat app!</p>
+            <p className="typography-body">
+              Scan the snapcode with your snapchat app!
+              <br />
+              ...or click on&nbsp;
+              <a target='_blank'
+                href='https://www.snapchat.com/lens/fadc2a35713e481ebc5c073a3058e631?sender_web_id=ef296225-bea0-402f-ae63-544557cde8e1&device_type=desktop&is_copy_url=true'>
+                 <i>this link 🔗</i>
+              </a>
+            </p>
           </Parallax>
         </div>
         <div className='centerContentViewport'>

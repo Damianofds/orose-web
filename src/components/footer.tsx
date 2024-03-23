@@ -25,7 +25,7 @@ export default function Footer() {
                     <p>Don&apos;t miss our mint day!</p>
                     <br />
                     <MailCollector />
-                    <p>No subscription. One reminder only.</p>
+                    <p>A single reminder - No subscription</p>
                 </div>
                 <div style={{ minWidth: '350px', width: '25vw', paddingLeft: '5vw', whiteSpace: 'nowrap' }}>
                     <br />
