@@ -173,20 +173,20 @@ export default function Home() {
             </Parallax>
             <Parallax style={{
               position: 'absolute',
-              top: '20%'
-            }} scale={[0.3, 0.65]} rotate={[-900, 0]}>
+              top: '5%'
+            }} easing={'ease'} scale={[0.3, 0.65]} rotate={[-900, 0]}>
               <Image alt="" src={gital} />
             </Parallax>
             <Parallax style={{
               position: 'absolute',
-              top: '50%'
+              top: '30%'
             }} speed={0} scale={[0.6, 1.2]}>
               <h2 className="typography-heading" style={{ color: "white", textShadow: '4px 4px 1px green' }} >Decentralized ownership</h2>
             </Parallax>
             <Parallax style={{
               position: 'absolute',
-              top: '60%'
-            }} speed={20} easing={'easeOutQuad'} scale={[0, 1]}>
+              top: '40%'
+            }} speed={20}  scale={[0, 1]}>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                 <div style={{ flex: '0 0 30%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={openseaLogo} /></div>
                 <div style={{ flex: '0 0 35%' }} ><Image alt="" style={{ maxWidth: '100%', height: 'auto' }} src={metamaskLogo} /></div>
@@ -201,12 +201,12 @@ export default function Home() {
             <Parallax speed={0} scale={[0.1, 1.3]} >
               <h2 className="typography-heading">Physical<br/>craft</h2>
             </Parallax>
-            <Parallax scale={[0.1, 0.65]} rotate={[900, 0]}>
+            <Parallax easing={'ease'} speed={0} scale={[0.1, 0.65]} rotate={[900, 0]}>
               <Image alt="" src={phy} />
             </Parallax>
           </div>
         </div>
-        <div className='centerContentViewport'>
+        {/* <div className='centerContentViewport'>
           <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
             <h2>
               <span className="typography-heading">Gold alloys</span> 
@@ -214,7 +214,7 @@ export default function Home() {
             </h2>
             <p className="typography-body" >18 & 22 karat</p>
           </Parallax>
-        </div>
+        </div> */}
         <div className='centerContentViewport'>
           <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
             <h2 className="typography-heading">Try it on!</h2>
