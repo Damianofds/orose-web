@@ -31,25 +31,32 @@ export default function Footer() {
                 <div style={{ minWidth: '350px', width: '25vw', paddingLeft: '5vw', whiteSpace: 'nowrap' }}>
                     <br />
                     <div style={{ display: 'flex' }}>
-                        <Image src={discordLogo} alt="" style={{ height: '38px', maxWidth: '45px' }} />
-                        <p style={{ lineHeight: '45px' }}>&nbsp;&nbsp;Join our discord server</p>
+                        <SocialIcon target='blank' url="https://discord.gg/aKgZZ3kUu3" bgColor="#000000" style={{ scale: '90%', }} />
+                        <Link target='blank' style={{ textDecorationLine: 'none' }} href='https://discord.gg/aKgZZ3kUu3'>
+                            <span style={{ lineHeight: '45px' }}>&nbsp;&nbsp;Join us on Discord</span>
+                        </Link>
                     </div>
                     <div style={{ display: 'flex' }}>
-                        <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '80%', }} />
-                        <p style={{ lineHeight: '50px' }}>Get in touch on crypto X</p>
+                        <SocialIcon target='blank' url="https://www.x.com/damianofds" bgColor="#000000" style={{ scale: '90%', }} />
+                        <Link target='blank' style={{ textDecorationLine: 'none' }} href='https://www.x.com/damianofds'>
+                            <span style={{ lineHeight: '45px' }}>&nbsp;&nbsp;Follow us on crypto x</span>
+                        </Link>
                     </div>
                     <br />
                     <p><Link style={{ textDecorationLine: 'none' }} href='/roadmap'>Our roadmap</Link> |
-                        <Link style={{ textDecorationLine: 'none' }} href='/team'> The team</Link></p>
+                        <Link style={{ textDecorationLine: 'none' }} href='/team'> The team</Link>
+                    </p>
                     <br />
-                    Piazza Annibaliano, Rome (IT) - office
-                    <br />
-                    Berg am Laim, Munich (DE) - production
-                    <br />
-                    VAT ID 02680990468
-                    <br />
-                    hi@orose.gold
-                    <br /><br /><br />
+                    <p>
+                        Rome (IT) - Digital production
+                        <br />
+                        Munich (DE) - Jewelry production
+                        <br />
+                        VAT ID <span  style={{ userSelect: 'text' }}>02680990468</span>
+                        <br />
+                        <span  style={{ userSelect: 'text' }}>hi@orose.gold</span>
+                    </p>
+                    <br /><br />
                 </div>
 
 

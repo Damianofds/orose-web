@@ -19,6 +19,7 @@ import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.webp
 import discordName from '../../public/discord-name.png'
 import Swirl from "../components/swirl"
 import oroseSnapcode from "../../public/orose-snapcode.png"
+import { SocialIcon } from 'react-social-icons';
 
 
 export function OroseLogo() {
@@ -109,11 +110,6 @@ export function OroseClaim() {
   )
 }
 
-interface PhyGitalMainImageProps {
-  imageUrl: string;
-  fadeDuration: number;
-}
-
 export default function Home() {
 
   return (
@@ -148,6 +144,17 @@ export default function Home() {
             </h1>
             <ChainLisa />
           </Parallax>
+        </div>
+        <div className='centerContentViewport'>
+          <br /><br /><br />
+          <div style={{ position: 'relative'}}>
+            <Parallax speed={0} scale={[0.1, 1.3]} >
+              <h2 className="typography-heading">Physical<br/>craft</h2>
+            </Parallax>
+            <Parallax easing={'ease'} speed={0} scale={[0.1, 0.65]} rotate={[900, 0]}>
+              <Image alt="" src={phy} />
+            </Parallax>
+          </div>
         </div>
         <div
           className='centerContentViewport'
@@ -198,26 +205,6 @@ export default function Home() {
             </Parallax>
           </div>
         </div>
-        <div className='centerContentViewport'>
-          <br /><br /><br />
-          <div style={{ position: 'relative'}}>
-            <Parallax speed={0} scale={[0.1, 1.3]} >
-              <h2 className="typography-heading">Physical<br/>craft</h2>
-            </Parallax>
-            <Parallax easing={'ease'} speed={0} scale={[0.1, 0.65]} rotate={[900, 0]}>
-              <Image alt="" src={phy} />
-            </Parallax>
-          </div>
-        </div>
-        {/* <div className='centerContentViewport'>
-          <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
-            <h2>
-              <span className="typography-heading">Gold alloys</span> 
-              <p className="typography-heading">only</p>
-            </h2>
-            <p className="typography-body" >18 & 22 karat</p>
-          </Parallax>
-        </div> */}
         <div className='centerContentViewport'>
           <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
             <video autoPlay loop muted playsInline style={{ width: '80vw', maxWidth: '400px' }}>
@@ -289,18 +276,20 @@ export default function Home() {
           </Parallax>
         </div>
         <div className='centerContentViewport'>
-          <Parallax speed={0} scale={[0.2, 0.9]} style={{
+          <Parallax speed={-20} scale={[0.2, 1.0]} style={{
               display: 'flex', justifyContent: 'center', alignItems: 'center' }}
             >
-            <p className="typography-body">
-                Join our community on
+            <p className="typography-heading">
+                Join us on Discord
             </p>
           </Parallax>
-          <Parallax speed={0} scale={[0.2, 1.1]} style={{
+          {/* <Parallax speed={20} scale={[0.2, 1.0]} style={{
               display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-            >
-            <Image src={discordName} alt="" style={{ height: 'auto', maxWidth: '40vw', minWidth: '300px' }} />
-          </Parallax>
+            > */}
+            <br/><br/>
+            <SocialIcon target='blank' url="https://discord.gg/aKgZZ3kUu3" bgColor="#000000" style={{ scale: '400%', maxWidth:'50px'}} />
+            {/* <Image src={discordName} alt="" style={{ height: 'auto', maxWidth: '40vw', minWidth: '300px' }} /> */}
+          {/* </Parallax> */}
         </div>
         <div className='centerContentViewport'>
           <Footer />
