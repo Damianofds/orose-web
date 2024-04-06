@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { Typewriter } from 'react-simple-typewriter'
 import React, { useState, useEffect } from 'react';
@@ -16,7 +15,6 @@ import arbitrumLogo from '../../public/arbitrium-logo.png'
 import smartLookingGirlMinting from '../../public/pics/photo/2-cool-minting.webp'
 import smartLookingGirlTrading from '../../public/pics/photo/2-cool-trading.webp'
 import smartLookingGirlWearing from '../../public/pics/photo/2-cool-wearing.webp'
-import discordName from '../../public/discord-name.png'
 import Swirl from "../components/swirl"
 import oroseSnapcode from "../../public/orose-snapcode.png"
 import { SocialIcon } from 'react-social-icons';
@@ -114,12 +112,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Oros&#232; ✨ Trade your jewels, wear your NFTs!</title>
-        <meta name="description" content="Orosé - Trade your jewels, wear your NFTs!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="" />
-      </Head>
       <main className={styles.main}>
         <div className='centerContentViewport'>
           <Topmenu />
@@ -214,15 +206,14 @@ export default function Home() {
             <Image alt="" src={oroseSnapcode} />
             <br /><br />
             <p className="typography-body">
-              Scan the snapcode with your snapchat app!
-              <br />
-              ...or click on&nbsp;
+              Scan the snapcode or click &nbsp;
               <a target='_blank'
                 href='https://www.snapchat.com/lens/fadc2a35713e481ebc5c073a3058e631?sender_web_id=ef296225-bea0-402f-ae63-544557cde8e1&device_type=desktop&is_copy_url=true'>
-                 <i>this link 🔗</i>
+                <strong>HERE🔗</strong>
               </a>
             </p>
           </Parallax>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
         <div className='centerContentViewport'>
           <Parallax speed={0} scale={[0.15, 1.2]} style={{ zIndex: '100' }}>
@@ -283,13 +274,8 @@ export default function Home() {
                 Join us on Discord
             </p>
           </Parallax>
-          {/* <Parallax speed={20} scale={[0.2, 1.0]} style={{
-              display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-            > */}
-            <br/><br/>
-            <SocialIcon target='blank' url="https://discord.gg/aKgZZ3kUu3" bgColor="#000000" style={{ scale: '400%', maxWidth:'50px'}} />
-            {/* <Image src={discordName} alt="" style={{ height: 'auto', maxWidth: '40vw', minWidth: '300px' }} /> */}
-          {/* </Parallax> */}
+          <SocialIcon target='blank' url="https://discord.gg/aKgZZ3kUu3" bgColor="#000000" style={{ scale: '400%', maxWidth:'50px'}} />
+          <br/><br/><br/><br/><br/><br/>
         </div>
         <div className='centerContentViewport'>
           <Footer />

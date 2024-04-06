@@ -18,8 +18,8 @@ export default function Team() {
                 <div>
                     <Image alt="" style={{ maxWidth: '400px', height: 'auto' }} src={yootFds} />                        
                     <p className={'typography-body'}>
-                        <a href="https://twitter.com/fds_web" target='blank'>
-                            <SocialIcon url="https://www.x.com/fds_web" bgColor="#000000" style={{ scale: '70%',  }} />@fds.eth 📨
+                        <a href="https://twitter.com/damianofds" target='blank'>
+                            <SocialIcon url="https://www.x.com/damianofds" bgColor="#000000" style={{ scale: '70%',  }} />@damianofds
                         </a>
                     </p>
                     <p className={'typography-body'}>Product manager</p>
@@ -29,7 +29,7 @@ export default function Team() {
                 </div>
                 <div>
                     <Image alt="" style={{ maxWidth: '400px', height: 'auto' }} src={goldsmithdesignImage} />
-                    <p className={'typography-body'}>Artist in stealth mode</p>
+                    <p className={'typography-body'}>Lsa</p>
                     <p className={'typography-body'}>Design & Goldsmithing</p>
                     <p className={'typography-body'}>Munich (DE)</p>
                 </div>

@@ -9,6 +9,12 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
+
+        <title>Oros&#232; ✨ Phygital Jewelry</title>
+        <meta name="description" content="Orosé - Trade your jewels, wear your NFTs!" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="" />
+
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
