@@ -11,9 +11,22 @@ export default function Document() {
       <Head>
 
         <title>Oros&#232; ✨ Phygital Jewelry</title>
-        <meta name="description" content="Orosé - Trade your jewels, wear your NFTs!" />
+        <meta name="description" content="Orosé ✨ Phygital Jewelry" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
+
+        <meta property="og:url" content="https://orose.gold" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Orosè ✨ Phygital Jewelry" />
+        <meta property="og:description" content="Orosé - Trade your jewels, wear your NFTs!" />
+        <meta property="og:image" content="/orose-logo-square.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="orose.gold" />
+        <meta property="twitter:url" content="https://orose.gold" />
+        <meta name="twitter:title" content="Orosè ✨ Phygital Jewelry" />
+        <meta name="twitter:description" content="Orosé - Trade your jewels, wear your NFTs!" />
+        <meta name="twitter:image" content="/orose-logo-square.png"/>
 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" />
